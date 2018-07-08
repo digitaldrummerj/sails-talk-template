@@ -4,6 +4,9 @@
 ### Create User
 ### Password will be hashed
 
+### MAKE SURE TO
+### Blueprints.js -> turn on REST and Actions
+
 POST http://localhost:1337/user
 content-type: application/json
 
@@ -30,7 +33,7 @@ GET http://localhost:1337/user
 ### does not matter in this case because it will
 ### use the logged in user's id
 
-GET http://localhost:1337/user/1
+GET http://localhost:1337/user/2
 
 ### Logout User
 ### id is irrelevant as it will use the session user id
@@ -46,7 +49,7 @@ GET http://localhost:1337/user/identity
 ### this is to stop from accidentally updating the wrong user or a user that
 ### you don't own
 
-PATCH http://localhost:1337/user/6
+PATCH http://localhost:1337/user/1
 content-type: application/json
 
 {
@@ -56,7 +59,7 @@ content-type: application/json
 
 ### Delete User
 
-DELETE http://localhost:1337/user/8
+DELETE http://localhost:1337/user/2
 
 ### Create Todo Items
 
