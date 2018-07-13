@@ -19,8 +19,8 @@
 
 //   fn: async function(inputs, exits) {
 //     sails.log.debug('user.delete (id, userId)', inputs.id, this.req.session.userId);
-//     if (req.param('id') !== req.session.userId) {
-//       return res.badRequest('Nice try.');
+//     if (inputs.id !== this.req.session.userId) {
+//       return exits.invalid();
 //     }
 
 //     await User.destroy({ id: this.req.session.userId });

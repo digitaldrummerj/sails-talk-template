@@ -32,8 +32,8 @@
 
 //   fn: async function(inputs, exits) {
 //     sails.log.debug('user.update', inputs.id, this.req.session.userId, inputs.email);
-//     if (req.param('id') !== req.session.userId) {
-//       return res.badRequest('Nice try.');
+//     if (inputs.id !== this.req.session.userId) {
+//       return exits.invalid();
 //     }
 //     var email = inputs.email.toLowerCase();
 
